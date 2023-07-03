@@ -6,9 +6,9 @@ pipeline {
     }
     
     stages{
-        stage "build" {
+        stage (build) {
             steps {
-              sh "mvn -version"
+              sh 'mvn -version'
               sh "mvn clean build"
             }
         }
